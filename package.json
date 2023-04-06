@@ -1,0 +1,27 @@
+{
+  "name": "whatsapp-baileys-template",
+  "version": "1.0.0",
+  "description": "Template for Whatsapp Baileys",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luthfifadle/WhatsApp-Baileys-Template.git"
+  },
+  "keywords": [
+    "whatsapp"
+  ],
+  "author": "Luthfi Fadle Rynaldy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luthfifadle/WhatsApp-Baileys-Template/issues"
+  },
+  "homepage": "https://github.com/luthfifadle/WhatsApp-Baileys-Template#readme",
+  "dependencies": {
+    "@adiwajshing/baileys": "^5.0.0",
+    "express": "^4.18.2",
+    "yarn": "^1.22.19"
+  }
+}
