@@ -24,14 +24,10 @@ app.options(
 require("dotenv").config();
 
 const { PORT_NUMBER } = process.env;
-const whatsapp = require("./helpers/whatsapp");
+const whatsapp = require("./config/whatsapp");
 
-const sessionRoute = require("./routes/session");
-const reservasiRoute = require("./routes/reservasi");
-const mainRoute = require("./routes/main");
-const paymentRoute = require("./routes/payment");
-const messageRoute = require("./routes/message");
 const indexRoute = require("./routes/index");
+const sessionRoute = require("./routes/session");
 
 // app.use(cors("*"));
 
@@ -41,12 +37,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.use("/api/session", sessionRoute);
-app.use("/api/reservasi", reservasiRoute);
-app.use("/api/main", mainRoute);
-app.use("/payment", paymentRoute)
-app.use("/message", messageRoute)
 app.use("/", indexRoute)
+app.use("/api/session", sessionRoute);
 
 // app.get("/", (req, res) => {
 //   res.sendFile(path.join(__dirname, "/views/index.html"));
