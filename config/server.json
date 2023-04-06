@@ -1,0 +1,9 @@
+{
+    "apps": [
+      {
+        "name": "whatsapp-baileys",
+        "script": "node index"
+      }
+    ]
+  }
+  
